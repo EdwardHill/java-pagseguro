@@ -19,15 +19,10 @@ public class JavaPagSeguroApplication {
 		SpringApplication.run(JavaPagSeguroApplication.class, args);
 	}
 	
-	/*@Bean
-    CommandLineRunner lookup(CheckoutService service) {
-        return args -> {
-            
-            try {
-            	service.checkoutRegister(new PagamentoDTO());
-            } catch (RuntimeException e) {
-                LOGGER.error(e.getMessage(), e);
-            }
-        };
-    }*/
+	/*
+	 * @Bean CommandLineRunner lookup(CheckoutService service) { return args -> {
+	 * 
+	 * try { service.checkoutRegister(new PagamentoDTO()); } catch (RuntimeException
+	 * e) { LOGGER.error(e.getMessage(), e); } }; }
+	 */
 }

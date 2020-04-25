@@ -16,8 +16,9 @@ public class PagamentoComponent {
 	@Autowired
 	private RemetenteComponent remetenteComponent;
 	
-	@Autowired
-	private RemessaComponent remessaComponent;
+	
+	  @Autowired private RemessaComponent remessaComponent;
+	 
 	
 	@Autowired
 	private ProdutoComponent produtoComponent;
@@ -32,8 +33,7 @@ public class PagamentoComponent {
 				.withReference(ConstanteUtil.REFERENCE_LIBJAVA)
 				.withSender(
 						remetenteComponent.toSenderBuilder(pagamento.getRemetente()))
-				.withShipping(
-						remessaComponent.toShippingBuilder(pagamento.getRemessa()));
+				.withShipping(remessaComponent.toShippingBuilder(pagamento.getRemessa())); 
 		          
 		          
 		List<ProdutoDTO> produtos = pagamento.getProdutos();

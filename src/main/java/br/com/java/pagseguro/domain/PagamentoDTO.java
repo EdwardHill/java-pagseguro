@@ -69,13 +69,11 @@ public class PagamentoDTO implements Serializable{
 		this.remetente = remetente;
 	}
 
-	public RemessaDTO getRemessa() {
-		return remessa;
-	}
-
-	public void setRemessa(RemessaDTO remessa) {
-		this.remessa = remessa;
-	}
+	
+	  public RemessaDTO getRemessa() { return remessa; }
+	  
+	  public void setRemessa(RemessaDTO remessa) { this.remessa = remessa; }
+	 
 
 	public List<ProdutoDTO> getProdutos() {
 		return produtos;

@@ -19,5 +19,6 @@ public class RemessaComponent {
 				.withCost(remessa.getCusto())
 				.withAddress(
 						enderecoComponent.toAddressBuilder(remessa.getEndereco()));
+						
 	}
 }
